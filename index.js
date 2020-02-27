@@ -12,12 +12,12 @@ $(document).ready(function(){
          ball3 = document.getElementById('ball4'),
          ball4 = document.getElementById('ball5'),
          ball5 = document.getElementById('ball6'),
-     balls =  ['<div class="balla1" style="background-color:red;" onclick="balla()">JS</div>','<div class="ballb">ANGULAR</div>','<div class="ballc">REACT</div>','<div class="balld">HTML</div>'];
-     balls2 = ['<div class="ballb">ANGULAR</div>','<div class="balla2" style="background-color:red;" onclick="ballb()">JS</div>','<div class="balld">HTML</div>','<div class="ballc">REACT</div>',];
-     balls3 = ['<div class="balla3" style="background-color:red;" onclick="ballc()">JS</div>','<div class="ballb">ANGULAR</div>','<div class="balld">HTML</div>','<div class="ballc">REACT</div>',];
-     balls4 = ['<div class="ballb">ANGULAR</div>','<div class="balld">HTML</div>','<div class="balla4" style="background-color:red;" onclick="balld()">JS</div>','<div class="ballc">REACT</div>',];
-     balls5 = ['<div class="ballc">REACT</div>','<div class="ballb">ANGULAR</div>','<div class="balla5" style="background-color:red;" onclick="balle()">JS</div>','<div class="balld">HTML</div>',];
-     balls6 = ['<div class="balld">HTML</div>','<div class="ballb">ANGULAR</div>','<div class="balla6" style="background-color:red;" onclick="ballf()">JS</div>','<div class="ballc">REACT</div>',];
+     balls =  ['<div class="balla1" style="background-color:red;" onclick="balla()">JS</div>','<div class="ballb" onclick="azalt()">ANGULAR</div>','<div class="ballc" onclick="azalt()">REACT</div>','<div class="balld" onclick="azalt()">HTML</div>'];
+     balls2 = ['<div class="ballb" onclick="azalt()">ANGULAR</div>','<div class="balla2" style="background-color:red;" onclick="ballb()">JS</div>','<div class="balld" onclick="azalt()">HTML</div>','<div class="ballc" onclick="azalt()">REACT</div>',];
+     balls3 = ['<div class="balla3" style="background-color:red;" onclick="ballc()">JS</div>','<div class="ballb" onclick="azalt()">ANGULAR</div>','<div class="balld" onclick="azalt()">HTML</div>','<div class="ballc" onclick="azalt()">REACT</div>',];
+     balls4 = ['<div class="ballb" onclick="azalt()">ANGULAR</div>','<div class="balld" onclick="azalt()">HTML</div>','<div class="balla4" style="background-color:red;" onclick="balld()">JS</div>','<div class="ballc" onclick="azalt()">REACT</div>',];
+     balls5 = ['<div class="ballc" onclick="azalt()">REACT</div>','<div class="ballb" onclick="azalt()">ANGULAR</div>','<div class="balla5" style="background-color:red;" onclick="balle()">JS</div>','<div class="balld" onclick="azalt()">HTML</div>',];
+     balls6 = ['<div class="balld" onclick="azalt()">HTML</div>','<div class="ballb" onclick="azalt()">ANGULAR</div>','<div class="balla6" style="background-color:red;" onclick="ballf()">JS</div>','<div class="ballc" onclick="azalt()">REACT</div>',];
 function change(ball,ball1,ball2,ball3,ball4,ball5,balls,balls2,balls3,balls4,balls5){
     'use strict';
     setInterval(function() {
@@ -106,3 +106,7 @@ function balla(){
         $('.border').hide();
     };
    };
+   function azalt(){
+    i--;
+    document.getElementById('scoreofpoints').innerHTML= i ;
+};
