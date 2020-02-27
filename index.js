@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.start').click(function(){
         $(this).hide();
+        $('.border').show();
         $('.info p').hide();
         $('.collection p').css('display','flex');
     });
@@ -47,7 +48,7 @@ function balla(){
         $('.balls').hide();
         $('.collection').hide();
         $('.finish').show();
-        $("#particles-js").show();
+        $('.border').hide();
     };
    };
    function ballb(){
@@ -58,6 +59,7 @@ function balla(){
         $('.balls').remove();
         $('.collection').hide();
         $('.finish').show();
+        $('.border').hide();
     };
    };
    function ballc(){
@@ -68,6 +70,7 @@ function balla(){
         $('.balls').remove();
         $('.collection').hide();
         $('.finish').show();
+        $('.border').hide();
     };
    };
    function balld(){
@@ -78,6 +81,7 @@ function balla(){
         $('.balls').remove();
         $('.collection').hide();
         $('.finish').show();
+        $('.border').hide();
     };
    };
    function balle(){
@@ -88,6 +92,7 @@ function balla(){
         $('.balls').remove();
         $('.collection').hide();
         $('.finish').show();
+        $('.border').hide();
     };
    };
    function ballf(){
@@ -98,5 +103,6 @@ function balla(){
         $('.balls').remove();
         $('.collection').hide();
         $('.finish').show();
+        $('.border').hide();
     };
    };
